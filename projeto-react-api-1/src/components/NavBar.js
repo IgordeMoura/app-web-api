@@ -27,8 +27,9 @@ function Navbar (){
                 </ul>
 
             </Container>
-
+            
             <Outlet/>
+            
         </>
     )
 }
