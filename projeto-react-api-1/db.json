@@ -1,25 +1,46 @@
 {
-    "books": [],
-    "categories":[
-        {
-            "id": 1,
-            "name": "Ficção Científica"
-        },
-        {
-            "id": 2,
-            "name": "Back-end"
-        },
-        {
-            "id": 3,
-            "name": "Front-end"
-        },
-        {
-            "id": 4,
-            "name": "Banco de Dados"
-        },
-        {
-            "id": 5,
-            "name": "Cloud Computing"
-        }
-    ]
+  "books": [
+    {
+      "id": "6cf2",
+      "nome_livro": "As Cavernas de Aço",
+      "nome_autor": "Isac Azimov",
+      "descricao": "Uma Obra da Serie dos Robos",
+      "category": {
+        "id": "1",
+        "category": "Ficção Científica"
+      }
+    },
+    {
+      "id": "9dc6",
+      "nome_livro": "Teste de Livro",
+      "nome_autor": "Teste de Autor",
+      "descricao": "teste de Descrição",
+      "category": {
+        "id": "2",
+        "category": "Back-end"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Ficção Científica"
+    },
+    {
+      "id": "2",
+      "name": "Back-end"
+    },
+    {
+      "id": "3",
+      "name": "Front-end"
+    },
+    {
+      "id": "4",
+      "name": "Banco de Dados"
+    },
+    {
+      "id": "5",
+      "name": "Cloud Computing"
+    }
+  ]
 }

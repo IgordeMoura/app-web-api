@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
 import Input from '../components/form/Input';
+import { useNavigate } from 'react-router-dom';
 
 import styles from './NovoLivro.module.css';
 import Select from '../components/form/Select/Select';
 
 function NovoLivro (){
+
+    /* Objeto de Navegação */
+    const navigate = useNavigate();
 
     /* State de Dados das Categorias Vindas do Arquivo db.json */
     const [categories, setCategories] = useState([]);
@@ -52,13 +56,45 @@ function NovoLivro (){
     }
 
     console.log(book)
+
+    /* Inserção dos Dados de Livro */
+    function createBook(book){
+
+        fetch('http://localhost:5000/books', {
+            method: 'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(book)
+        })
+        .then(
+            (resp)=>resp.json()
+        )
+        .then(
+            (data)=>{
+                console.log(data);
+                navigate ('/livros');
+            }
+        )
+        .catch(
+            (err)=>{
+                console.log(err)
+            }
+        )
+    }
+
+    /* Função de Submit */
+    function submit(event){
+        event.preventDefault();
+        createBook(book);
+    }
     
     return(
         <section className={styles.novo_livro_container}>
 
             <h1>Cadastro de Livro</h1>
 
-            <form>
+            <form onSubmit={submit}>
 
                 <Input
                     type='text'
