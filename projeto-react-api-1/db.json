@@ -19,6 +19,16 @@
         "id": "2",
         "category": "Back-end"
       }
+    },
+    {
+      "id": "b6b7",
+      "nome_livro": "a",
+      "nome_autor": "a",
+      "descricao": "a",
+      "category": {
+        "id": "3",
+        "category": "Front-end"
+      }
     }
   ],
   "categories": [
