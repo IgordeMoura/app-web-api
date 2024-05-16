@@ -11,23 +11,13 @@
       }
     },
     {
-      "id": "9dc6",
-      "nome_livro": "Teste de Livro",
-      "nome_autor": "Teste de Autor",
-      "descricao": "teste de Descrição",
+      "id": "1880",
+      "nome_livro": "5",
+      "nome_autor": "1",
+      "descricao": "6",
       "category": {
-        "id": "2",
-        "category": "Back-end"
-      }
-    },
-    {
-      "id": "b6b7",
-      "nome_livro": "a",
-      "nome_autor": "a",
-      "descricao": "a",
-      "category": {
-        "id": "3",
-        "category": "Front-end"
+        "id": "4",
+        "category": "Banco de Dados"
       }
     }
   ],
