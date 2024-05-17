@@ -54,7 +54,7 @@ function Livros (){
     const location = useLocation();
     let message = '';
 
-    console.log('location state: ' + location.state);
+    // console.log('location state: ' + location.state);
 
     if (location.state){
         message = location.state;
