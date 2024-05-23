@@ -12,12 +12,12 @@
     },
     {
       "id": "1880",
-      "nome_livro": "5",
-      "nome_autor": "1",
-      "descricao": "6",
+      "nome_livro": "5teste",
+      "nome_autor": "1teste",
+      "descricao": "6teste",
       "category": {
-        "id": "4",
-        "category": "Banco de Dados"
+        "id": "2",
+        "category": "Back-end"
       }
     }
   ],
